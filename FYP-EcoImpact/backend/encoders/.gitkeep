@@ -1,0 +1,8 @@
+# Encoder Files Directory
+# Place your trained encoder .pkl files here:
+# - encoders_direct.pkl (Label encoders for revenue model features)
+# - encoders_success.pkl (Label encoders for success model features)
+
+
+
+
