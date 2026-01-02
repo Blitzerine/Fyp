@@ -1,0 +1,60 @@
+{
+  "saved_date": "2025-12-29 19:05:39",
+  "revenue_model": {
+    "variable_name": "gb_revenue_cov",
+    "encoders_variable": "encoders_revenue_cov",
+    "algorithm": "GradientBoostingRegressor",
+    "loss": "huber",
+    "test_r2": 0.8899,
+    "median_error_percent": 24.1,
+    "features": [
+      "Type",
+      "Region",
+      "Income group",
+      "Year",
+      "Carbon_Price_USD",
+      "Actual_Coverage_%",
+      "Coverage_x_GDP",
+      "Fossil_Fuel_Dependency_%",
+      "Population_Log",
+      "GDP"
+    ],
+    "target": "Revenue_Million_USD",
+    "n_features": 10,
+    "coverage_included": true,
+    "coverage_range": "1.03% - 96.10%",
+    "hyperparameters": {
+      "alpha": 0.9,
+      "learning_rate": 0.01,
+      "loss": "huber",
+      "max_depth": 5,
+      "min_samples_split": 5,
+      "n_estimators": 500,
+      "subsample": 0.8
+    }
+  },
+  "success_model": {
+    "variable_name": "gb_success_final",
+    "encoders_variable": "encoders_success",
+    "algorithm": "GradientBoostingClassifier",
+    "test_accuracy": 0.954,
+    "test_precision": 1.0,
+    "test_recall": 0.675,
+    "features": [
+      "Type",
+      "Region",
+      "Income group",
+      "Year",
+      "Fossil_Fuel_Dependency_%",
+      "GDP"
+    ],
+    "target": "Status",
+    "n_features": 6,
+    "coverage_included": false,
+    "risk_thresholds": {
+      "low": 0.35,
+      "high": 0.65
+    },
+    "hyperparameters_note": "Stored in model object (from GridSearchCV best_estimator_)"
+  }
+}

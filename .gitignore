@@ -1,0 +1,93 @@
+# DTS Documents and PDFs
+DTS-Phase_3_EcoImpactAI.docx
+*.pdf
+*.docx
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artifacts
+*.pkl
+*.joblib
+models/
+
+# Logs
+*.log
+
+# Personal documentation (local only)
+PROJECT_MASTER_DOCUMENTATION.md
+CONTEXT_RESTORATION_PROMPT.md
+Data_Preprocessing_Decisions.md
+ML Model/FEATURE_ENGINEERING_PLAN.md
+FRONTEND_CRITICAL_REMINDER.md
+BACKEND_COMPLETE_README.md
+Frontend_UI
+frontend/GUIDANCE_FOR_FRONTEND.md
+
+# Node.js / React / Vite
+node_modules/
+dist/
+build/
+.cache/
+*.local
+
+# Frontend dependency lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Backend
+backend/__pycache__/
+backend/.env
+backend/venv/
+backend/.pytest_cache/
+
+README.md
+react.svg
+vite.svg
+
+EcoImpact-Frontend-main
+
+# Migration scripts (one-time use)
+backend/migrate_*.py
+
+# Temporary/backup files
+*_backup_*.csv
+*.backup
+*.bak
+FRIEND_SETUP.md
+# Dataset large files (keep structure but not large CSVs)
+dataset/processed/*_backup_*.csv
+
+# Old/unused folders
+appmodels/
+
+tests
+
+
